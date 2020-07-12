@@ -6,10 +6,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Splash from '../screen/Splash';
 import ForgotPassword from '../screen/ForgotPassword';
 import NewsLetter from '../screen/NewsLetter';
-import SignIn from '../screen/SignIn';
-import SignUp from '../screen/SignUp';
 import WalkThrough from '../screen/WalkThrough';
-
+import Authen from '../screen/Authen';
 
 const Stack = createStackNavigator();
 
@@ -24,7 +22,7 @@ export default class StackNavigation extends Component {
     render() {
         return (
             <NavigationContainer>
-                <Stack.Navigator initialRouteName="Splash">
+                <Stack.Navigator initialRouteName="Authen">
                     <Stack.Screen 
                         name="Splash" component={Splash} 
                         options={{
@@ -44,16 +42,10 @@ export default class StackNavigation extends Component {
                           }}
                     />
                     <Stack.Screen 
-                        name="SignIn" component={SignIn} 
+                        name="Authen" component={Authen} 
                         options={{
                             headerStyle: hideHeader,
                           }}
-                    />
-                    <Stack.Screen 
-                        name="SignUp" component={SignUp} 
-                        options={{
-                            headerStyle: hideHeader,
-                        }}
                     />
                     <Stack.Screen 
                         name="WalkThrough" component={WalkThrough} 

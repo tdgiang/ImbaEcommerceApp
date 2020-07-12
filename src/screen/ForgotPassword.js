@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { View } from 'react-native';
-import Text  from '../component/Text';
+import { View,Text } from 'react-native';
 export default class ForgotPassword extends Component {
     render() {
         return (
            <View >
-               <Text h1>Forgot Password</Text>
+               <Text  >Forgot Password</Text>
            </View>
         );
     }
